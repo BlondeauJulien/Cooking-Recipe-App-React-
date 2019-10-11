@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RecipeList from './RecipeList';
+import Header from './Header';
+import Footer from './Footer'
 import '../css/app.css'
 import uuidv4 from 'uuid/v4'
 import RecipeEdit from './RecipeEdit';
@@ -68,12 +70,12 @@ function App() {
 
   return (
     <RecipeContext.Provider value={recipeContectValue}>
+    <Header />
     <RecipeList recipes={recipes} />
     {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
+    <Footer />
     </RecipeContext.Provider>
   )
-
-  
 }
 
 

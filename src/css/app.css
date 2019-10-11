@@ -1,10 +1,12 @@
 @import-normalize;
 @import 'font.css';
+@import 'header.css';
 @import 'buttons.css';
 @import 'recipe-list.css';
 @import 'recipe.css';
 @import 'ingredient-list.css';
 @import 'recipe-edit.css';
+@import 'footer.css';
 
 
 *, *::before, *::after {
@@ -24,3 +26,4 @@ body {
 .mr-1 {
     margin-right: 5px;
 }
+
